@@ -1,5 +1,6 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
+import 'bootstrap/dist/js/bootstrap.bundle'
 import './App.css';
 import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Layout from './components/Layout';
@@ -10,14 +11,12 @@ import { Contact } from './pages/Contact';
 function App() {
   return (
     <div className="App">
-
       <Router>
         <Routes>
           <Route path='/' element={<Layout/>} >
             <Route index element={<Home/>}/>
             <Route path='about' element={<About/>}/>
             <Route path='contact' element={<Contact/>}/>
-
           </Route>
         </Routes>
       </Router>
