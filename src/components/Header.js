@@ -25,7 +25,7 @@ const Header = ()=>{
                     <div className="row align-items-center">
                         <div className="col-2">
                             <h2> 
-                                <Link className='text-white'>Best In Tech</Link>
+                                <Link className='text-white'><img className="img-fluid" src="images/shopify-ico.svg" alt="shopify" />Shopify</Link>
                             </h2>
                         </div>
                         <div className="col-5">
