@@ -1,6 +1,7 @@
 import React from 'react';
 import {NavLink, Link} from 'react-router-dom'
 import {BsSearch} from 'react-icons/bs'
+import { CgMenuGridO } from "react-icons/cg";
 
 const Header = ()=>{
     return (
@@ -25,14 +26,16 @@ const Header = ()=>{
                     <div className="row align-items-center">
                         <div className="col-2">
                             <h2> 
-                                <Link className='text-white'><img className="img-fluid" src="images/shopify-ico.svg" alt="shopify" />Shopify</Link>
+                                <Link className='text-white'>
+                                    <img src="images/logo/logo.png" alt="" height={40} width={180} />
+                                </Link>
                             </h2>
                         </div>
                         <div className="col-5">
                             <div class="input-group">
                                 <input type="text" class="form-control" placeholder="Search Product Here..." aria-label="Search Product Here..." aria-describedby="basic-addon2"/>
                                 <span class="input-group-text p-3" id="basic-addon2">
-                                    <BsSearch className='fs-6'/>
+                                    <BsSearch className='fs-8'/>
                                 </span>
                                 
                             </div>
@@ -81,32 +84,31 @@ const Header = ()=>{
                                 <div>
                                     <div className="dropdown">
                                         <button 
-                                            className="btn btn-secondary dropdown-toggle bg-transparent border-0" 
+                                            className="btn btn-secondary dropdown-toggle bg-transparent border-0 gap-15 d-flex align-items-center" 
                                             type='button'
                                             id="dropdownMenu" 
                                             data-bs-toggle="dropdown"
                                             aria-expanded="false" >
-
-                                            <img src='images/menu.svg' alt='menu icon'/>
-                                            <span> Categories</span>
+                                                <CgMenuGridO className='fs-3'/>
+                                            {/* <img src='images/menu.svg' alt='menu icon'/> */}
+                                            <span className='d-inline-block me-5'> Categories</span>
                                           
                                         </button>
                                         <ul className='dropdown-menu' aria-labelledby='dropdownMenu'>
                                             <li>
-                                                <a className="dropdown-item" href="#">Action</a>
+                                                <Link className="dropdown-item text-white" to="/">Accessories</Link>
                                             </li>
                                             <li>
-                                                <a className="dropdown-item" href="#">Another action</a>
+                                                <Link className="dropdown-item text-white" to="/">Mobiles and Tablets</Link>
                                             </li>
                                             <li>
-                                                <a className="dropdown-item" href="#">Something else here</a>
-
+                                                <Link className="dropdown-item text-white" to="/">Computers & Laptops</Link>
                                             </li>
                                         </ul>
                                     </div>
                                 </div>
                                 <div className="menu-links">
-                                    <div className='d-flex align-item-center gap-15'>
+                                    <div className='d-flex align-item-center gap-30'>
                                         <NavLink to="/" >Home</NavLink>
                                         <NavLink to="/" >Store</NavLink>
                                         <NavLink to="/" >Blogs</NavLink>
