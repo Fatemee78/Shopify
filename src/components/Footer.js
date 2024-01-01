@@ -82,7 +82,7 @@ const Footer = ()=>{
                                 <Link className='text-white py-2 mb-1'>Accessories</Link>
                                 <Link className='text-white py-2 mb-1'>Laptops</Link>
                                 <Link className='text-white py-2 mb-1'>Tablets</Link>
-                                <Link className='text-white py-2 mb-1'>Tv</Link>
+                                <Link className='text-white py-2 mb-1'>Phones</Link>
                             </div>
                         </div>
                     </div>
@@ -94,7 +94,7 @@ const Footer = ()=>{
                     <div className="row">
                         <div className="col-12 mb-0 text-white">
                             <p className="text-center">
-                                &copy; {new Date().getFullYear()}; Powered by Fatemeh Rezwani
+                                &copy; {new Date().getFullYear()}; Powered by Fatemeh Bakhshi
                             </p>
                         </div>
                     </div>
